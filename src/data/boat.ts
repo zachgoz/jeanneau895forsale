@@ -172,6 +172,10 @@ export const boat: BoatListing = {
     editorialPhotos.cabin,
     editorialPhotos.helm,
     editorialPhotos.cockpit,
+    photos.find((p) => p.id === "beach-cruising")!,
+    photos.find((p) => p.id === "salon-dinette-staged")!,
+    photos.find((p) => p.id === "second-cabin-staged")!,
+    photos.find((p) => p.id === "enclosed-head-staged")!,
     ...photos.filter(
       (photo) =>
         ![
@@ -180,6 +184,10 @@ export const boat: BoatListing = {
           editorialPhotos.cabin.id,
           editorialPhotos.helm.id,
           editorialPhotos.cockpit.id,
+          "beach-cruising",
+          "salon-dinette-staged",
+          "second-cabin-staged",
+          "enclosed-head-staged",
         ].includes(photo.id),
     ),
   ],

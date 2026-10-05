@@ -51,4 +51,24 @@ describe("analytics privacy", () => {
     expect(sanitizeAnalyticsProperties({ performance_profile: "standard-cruise", data_source: "owner" } as unknown as AnalyticsProperties)).toEqual({ performance_profile: "standard-cruise" });
     expect(sanitizeAnalyticsProperties({ performance_profile: "owner-cruise", data_source: "published" })).toEqual({ data_source: "published" });
   });
+  it("sanitizes gallery staging modes and paired photo targets strictly", () => {
+    expect(
+      sanitizeAnalyticsProperties({
+        mode: "staged",
+        photo_id: "forward-cabin-staged",
+        target_id: "forward-cabin",
+      }),
+    ).toEqual({
+      mode: "staged",
+      photo_id: "forward-cabin-staged",
+      target_id: "forward-cabin",
+    });
+    expect(
+      sanitizeAnalyticsProperties({
+        mode: "invalid_mode" as unknown as "staged",
+        photo_id: "arbitrary-injection",
+        target_id: "fake-id",
+      }),
+    ).toEqual({});
+  });
 });

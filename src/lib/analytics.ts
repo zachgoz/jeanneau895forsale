@@ -8,6 +8,10 @@ export const analyticsEvents = [
   "contact_form_error",
   "gallery_open",
   "gallery_view_all",
+  "gallery_mode",
+  "gallery_toggle_card",
+  "gallery_toggle_lightbox",
+  "cabin_toggle_staged",
   "view_specs",
   "view_service_history",
   "owner_story_view",
@@ -25,6 +29,8 @@ export type AnalyticsProperties = {
   data_source?: PerformanceSourceType;
   distance_band?: string;
   photo_id?: string;
+  target_id?: string;
+  mode?: "staged" | "unstaged" | "all";
   cta_location?: string;
   error_type?: string;
   section?: string;
@@ -40,6 +46,8 @@ const safeValues: Record<keyof AnalyticsProperties, RegExp> = {
   data_source: /^(published|interpolated)$/,
   distance_band: /^([0-9]{1,3}-[0-9]{1,3}|invalid)$/,
   photo_id: /^[a-zA-Z0-9_-]{1,90}$/,
+  target_id: /^[a-zA-Z0-9_-]{1,90}$/,
+  mode: /^(staged|unstaged|all)$/,
   cta_location: /^(header|hero|mobile|footer|overview|accommodations)$/,
   error_type: /^(validation|network|server)$/,
   section: /^(specifications|service|owner-story)$/,
@@ -51,6 +59,7 @@ export function sanitizeAnalyticsProperties(
   for (const [key, value] of Object.entries(properties)) {
     const pattern = safeValues[key as keyof AnalyticsProperties];
     if (key === "photo_id" && !safePhotoIds.has(String(value))) continue;
+    if (key === "target_id" && !safePhotoIds.has(String(value))) continue;
     if (key === "performance_profile" && !safeProfileIds.has(String(value)))
       continue;
     if (

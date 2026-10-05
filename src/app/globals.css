@@ -483,17 +483,86 @@ section[id] {
   border-top: 1px solid var(--line);
   padding-top: 88px;
 }
+.gallery-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.interior-staging-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #f4f7f5;
+  border: 1px solid #d8e2dc;
+  padding: 10px 16px;
+  margin-top: -12px;
+  margin-bottom: 24px;
+}
+.interior-staging-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.interior-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--ink);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+}
+.staging-toggle-group {
+  display: inline-flex;
+  align-items: center;
+  background: #edf2f0;
+  border: 1px solid #d4ded8;
+  padding: 4px;
+  gap: 4px;
+}
+.staging-toggle-group button {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  transition: all 0.2s;
+}
+.staging-toggle-group button.active {
+  background: #fff;
+  border-color: #c4d0c9;
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.staging-toggle-group button:hover:not(.active) {
+  color: var(--ink);
+}
 .gallery-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  margin-bottom: 24px;
 }
 .gallery-filters button {
   background: none;
   border: 1px solid transparent;
   padding: 8px 14px;
-  min-height: 44px;
+  min-height: 38px;
   font-size: 12px;
   color: var(--muted);
 }
@@ -543,6 +612,36 @@ section[id] {
   justify-content: space-between;
   gap: 10px;
 }
+.card-staging-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(16, 42, 54, 0.88);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 2;
+}
+.card-staging-badge strong {
+  color: #79d2d4;
+  font-weight: 600;
+}
+.card-staging-badge:hover {
+  background: var(--teal);
+  border-color: #fff;
+  transform: translateY(-1px);
+}
+.card-staging-badge:hover strong {
+  color: #fff;
+}
 .gallery-more {
   margin-top: 28px;
   display: flex;
@@ -579,6 +678,7 @@ section[id] {
   align-items: center;
   justify-content: space-between;
   font-size: 13px;
+  gap: 12px;
 }
 .lightbox button {
   width: 48px;
@@ -587,6 +687,25 @@ section[id] {
   border: 1px solid #ffffff50;
   background: none;
   font-size: 22px;
+}
+.lightbox-compare-btn {
+  background: var(--teal) !important;
+  color: white !important;
+  border: 1px solid #ffffff40 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  width: auto !important;
+  height: 38px !important;
+  padding: 0 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lightbox-compare-btn:hover {
+  background: #1d6265 !important;
+  border-color: #fff !important;
 }
 .lightbox-image {
   min-height: 0;
@@ -740,6 +859,52 @@ figcaption {
 .detail-photo-row img {
   height: 260px;
   object-fit: cover;
+}
+.cabin-staging-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cabin-staging-container {
+  position: relative;
+  overflow: hidden;
+  background: #d8dfdb;
+}
+.cabin-staging-container img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.cabin-staging-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  background: rgba(16, 42, 54, 0.88);
+  backdrop-filter: blur(4px);
+  padding: 3px;
+  gap: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 2;
+}
+.cabin-staging-switch button {
+  background: none;
+  border: 0;
+  color: #cdd8dc;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 9px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.cabin-staging-switch button.active {
+  background: var(--teal);
+  color: #fff;
+  font-weight: 600;
 }
 .performance-section {
   background: var(--ink);

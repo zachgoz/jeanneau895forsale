@@ -2,9 +2,10 @@ import Header, { ContactLink } from "@/components/Header";
 import Gallery from "@/components/Gallery";
 import ContactForm from "@/components/ContactForm";
 import PerformanceCalculator from "@/components/PerformanceCalculator";
+import CabinStagedPhoto from "@/components/CabinStagedPhoto";
 import { boat, priceFormatted, siteUrl, faqs } from "@/data/boat";
 import { referencePerformance } from "@/data/performance";
-import type { BoatPhoto } from "@/data/photos";
+import { photos, type BoatPhoto } from "@/data/photos";
 
 function Photo({
   photo,
@@ -54,6 +55,7 @@ function SectionIntro({
 }
 export default function Home() {
   const cruisingTestPoint = referencePerformance.find(point => point.rpm === 4500)!;
+  const unstagedCabin = photos.find((p) => p.id === "forward-cabin")!;
   const specs = [
     ["Year / model", `${boat.year} ${boat.make} ${boat.model}`],
     ["Vessel name", boat.vesselName],
@@ -422,10 +424,10 @@ export default function Home() {
             </div>
           </div>
           <div className="detail-photo-row">
-            <figure>
-              <Photo photo={boat.editorialPhotos.cabin} />
-              <figcaption>Private forward sleeping cabin</figcaption>
-            </figure>
+            <CabinStagedPhoto
+              stagedPhoto={boat.editorialPhotos.cabin}
+              unstagedPhoto={unstagedCabin}
+            />
             <figure>
               <Photo photo={boat.editorialPhotos.helm} />
               <figcaption>

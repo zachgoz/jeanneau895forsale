@@ -185,7 +185,7 @@ export const photos: BoatPhoto[] = [
     "height": 1200,
     "alt": "Forward private cabin with double berth, hull windows and wood storage lockers",
     "caption": "Forward private cabin",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8982.jpg"
   },
   {
@@ -196,7 +196,7 @@ export const photos: BoatPhoto[] = [
     "height": 1200,
     "alt": "View aft from the forward berth toward the private cabin door and hanging locker",
     "caption": "Forward cabin storage and access",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8977.jpg"
   },
   {
@@ -207,7 +207,7 @@ export const photos: BoatPhoto[] = [
     "height": 1200,
     "alt": "Lower second cabin berth with reading lights, wood trim and cushions",
     "caption": "Second private cabin",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8986.jpg"
   },
   {
@@ -218,7 +218,7 @@ export const photos: BoatPhoto[] = [
     "height": 2048,
     "alt": "Entrance to the second cabin showing the berth and hull window",
     "caption": "Second cabin access",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8985.jpg"
   },
   {
@@ -229,7 +229,7 @@ export const photos: BoatPhoto[] = [
     "height": 2048,
     "alt": "Enclosed head with installed marine toilet, basin, wood vanity and opening port",
     "caption": "Enclosed head",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8970.jpg"
   },
   {
@@ -240,7 +240,7 @@ export const photos: BoatPhoto[] = [
     "height": 2048,
     "alt": "Handheld shower fitting and basin inside the enclosed head",
     "caption": "Shower in the enclosed head",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_8967.jpg"
   },
   {
@@ -262,7 +262,7 @@ export const photos: BoatPhoto[] = [
     "height": 1195,
     "alt": "Forward private master cabin staged with made bed and decorative pillows aboard EZ Livin",
     "caption": "Forward master cabin · staged with made bed and pillows",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_9030.JPG"
   },
   {
@@ -273,7 +273,7 @@ export const photos: BoatPhoto[] = [
     "height": 1195,
     "alt": "Second private cabin staged with bedding, pillows and reading lights aboard EZ Livin",
     "caption": "Second cabin · staged with bedding and pillows",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_9031.JPG"
   },
   {
@@ -284,7 +284,7 @@ export const photos: BoatPhoto[] = [
     "height": 1195,
     "alt": "Enclosed marine head staged with rolled towels, wood vanity and sink aboard EZ Livin",
     "caption": "Enclosed head · staged with towels and vanity",
-    "category": "Cabins & head",
+    "category": "Interior",
     "originalFilename": "IMG_9032.JPG"
   },
   {
@@ -305,7 +305,7 @@ export const heroPhoto = photos.find((photo) => photo.id === "port-profile")!;
 export const editorialPhotos = {
   owner: photos.find((photo) => photo.id === 'beach-cruising')!,
   interior: photos.find((photo) => photo.id === 'salon-galley')!,
-  cabin: photos.find((photo) => photo.id === 'forward-cabin')!,
+  cabin: photos.find((photo) => photo.id === 'forward-cabin-staged')!,
   helm: photos.find((photo) => photo.id === 'helm-lowrance-hds9')!,
   engines: photos.find((photo) => photo.id === 'stern-twin-yamaha')!,
   cockpit: photos.find((photo) => photo.id === 'stern-twin-yamaha')!,
