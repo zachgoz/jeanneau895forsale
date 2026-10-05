@@ -30,6 +30,7 @@ const contactSchema = z
       "service_survey_documentation",
     ]),
     activelyLooking: z.boolean(),
+    requestSurvey: z.boolean().optional(),
     website: z.string().max(200),
   })
   .refine((v) => v.preferredContactMethod !== "phone" || v.phone.length > 0, {
@@ -48,6 +49,35 @@ export default function ContactForm() {
   >("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [errorMessage, setErrorMessage] = useState("");
+  const [inquiryType, setInquiryType] = useState<string>("general_question");
+  const [requestSurvey, setRequestSurvey] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
+
+  useEffect(() => {
+    function handleSurveyPrefill() {
+      setInquiryType("service_survey_documentation");
+      setRequestSurvey(true);
+      setMessage((prev) =>
+        prev.trim().length > 0
+          ? prev
+          : "Hello, I am interested in EZ Livin and would like to request copies of the historical marine survey documentation and recent service records.",
+      );
+    }
+
+    function checkHash() {
+      if (window.location.hash === "#contact-survey") {
+        handleSurveyPrefill();
+      }
+    }
+
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    window.addEventListener("prefill-survey-request", handleSurveyPrefill);
+    return () => {
+      window.removeEventListener("hashchange", checkHash);
+      window.removeEventListener("prefill-survey-request", handleSurveyPrefill);
+    };
+  }, []);
   function start() {
     if (!started.current) started.current = Date.now();
     if (!engaged.current) {
@@ -72,6 +102,7 @@ export default function ContactForm() {
           "website",
         ].map((key) => [key, String(values.get(key) || "")]),
         ["activelyLooking", values.get("activelyLooking") === "on"],
+        ["requestSurvey", values.get("requestSurvey") === "on"],
       ]),
     );
     if (!parsed.success) {
@@ -221,7 +252,14 @@ export default function ContactForm() {
         <select
           id="inquiryType"
           name="inquiryType"
-          defaultValue="general_question"
+          value={inquiryType}
+          onChange={(e) => {
+            const next = e.target.value;
+            setInquiryType(next);
+            if (next === "service_survey_documentation") {
+              setRequestSurvey(true);
+            }
+          }}
         >
           <option value="general_question">General question</option>
           <option value="additional_photos">Additional photos</option>
@@ -244,6 +282,8 @@ export default function ContactForm() {
           maxLength={5000}
           placeholder="Tell us what you’d like to know about EZ Livin…"
           required
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           {...association("message")}
         />
         {feedback("message")}
@@ -252,6 +292,27 @@ export default function ContactForm() {
         <label htmlFor="website">Leave this field empty</label>
         <input id="website" name="website" tabIndex={-1} autoComplete="off" />
       </div>
+      <label className="checkbox-label survey-checkbox">
+        <input
+          type="checkbox"
+          id="requestSurvey"
+          name="requestSurvey"
+          checked={requestSurvey}
+          onChange={(e) => {
+            const checked = e.target.checked;
+            setRequestSurvey(checked);
+            if (checked && inquiryType === "general_question") {
+              setInquiryType("service_survey_documentation");
+            }
+          }}
+        />
+        <span>
+          <strong>Request marine survey &amp; service records</strong>
+          <small className="checkbox-subtext">
+            Send me copies of the historical marine survey documentation and maintenance records.
+          </small>
+        </span>
+      </label>
       <label className="checkbox-label">
         <input type="checkbox" name="activelyLooking" />
         I’m actively looking for an NC 895 or similar cruiser.

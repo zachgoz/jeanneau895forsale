@@ -9,6 +9,7 @@ export type BoatListing = {
   location: string;
   shortLocation: string;
   saleType: string;
+  documentation: string;
   engineHours: number;
   engines: {
     description: string;
@@ -54,6 +55,7 @@ export const boat: BoatListing = {
   location: "Carolina Beach, North Carolina",
   shortLocation: "Carolina Beach, NC",
   saleType: "Private sale by owner",
+  documentation: "USCG Documented Vessel",
   engineHours: 400,
   engines: {
     description: "Twin Yamaha 200 HP XCA outboards with digital controls",
@@ -238,6 +240,11 @@ export const faqs = [
     question: "Can I schedule a showing or discuss a sea trial?",
     answer:
       "Yes. Send an inquiry below to arrange a showing. Serious prospective buyers can discuss sea-trial arrangements with the owner.",
+  },
+  {
+    question: "Is the boat titled or USCG documented?",
+    answer:
+      "EZ Livin is an official USCG Documented Vessel. Coast Guard documentation provides an established federal record of ownership and clear chain of title, which simplifies marine financing, domestic private transfer, and international passage (such as to the Bahamas).",
   },
   {
     question: "Are service records and survey documentation available?",

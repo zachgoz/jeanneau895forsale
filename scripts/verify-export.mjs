@@ -78,6 +78,8 @@ assert.ok(videoObject.embedUrl.includes("a7ZMJtGF8CU"), "VideoObject embedUrl mi
 assert.match(html, /a7ZMJtGF8CU/);
 assert.match(html, /Merry Fisher/);
 assert.match(html, /9′ 9″/);
+assert.match(html, /USCG Documented/i, "USCG Documented notice missing");
+assert.match(html, /Marine Survey/i, "Marine Survey callout missing");
 assert.equal(firebase.hosting.public, "out");
 assert.equal(firebase.hosting.rewrites.length, 1);
 assert.equal(firebase.hosting.rewrites[0].source, "/api/contact");

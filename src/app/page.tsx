@@ -57,6 +57,7 @@ export default function Home() {
   const specs = [
     ["Year / model", `${boat.year} ${boat.make} ${boat.model}`],
     ["Vessel name", boat.vesselName],
+    ["Documentation", boat.documentation],
     ["Asking price", priceFormatted],
     ["Location", boat.location],
     ["Length overall", boat.lengthOverall],
@@ -96,6 +97,7 @@ export default function Home() {
     },
     additionalProperty: [
       ["Year", String(boat.year)],
+      ["Documentation", boat.documentation],
       ["Beam", boat.beam],
       ["Engine hours", `Approximately ${boat.engineHours}`],
       ["Engine configuration", boat.engines.description],
@@ -139,7 +141,7 @@ export default function Home() {
           <div className="hero-topline">
             <p className="eyebrow">
               <span className="status-dot" />
-              Private sale by owner
+              Private sale by owner · USCG Documented Vessel
             </p>
             <p className="location-label">{boat.shortLocation}</p>
           </div>
@@ -243,12 +245,12 @@ export default function Home() {
               <p>
                 Known internationally as the Merry Fisher 895, the NC 895
                 Offshore pairs a {boat.beam} beam and dual-stepped hull with
-                practical coastal versatility. EZ Livin has been lift-kept for
-                the majority of her life, is smoke-free and pet-free, and has
-                been carefully maintained according to the owner. At
-                approximately {boat.engineHours} engine hours, she is offered
-                with recent service and a useful collection of cruising
-                equipment.
+                practical coastal versatility. EZ Livin is an official USCG
+                Documented Vessel that has been lift-kept for the majority of
+                her life, is smoke-free and pet-free, and has been carefully
+                maintained according to the owner. At approximately {boat.engineHours}{" "}
+                engine hours, she is offered with recent service and a useful
+                collection of cruising equipment.
               </p>
               <a className="text-link" href="#service">
                 See recent service & updates <span aria-hidden="true">↗</span>
@@ -531,8 +533,8 @@ export default function Home() {
                 serious buyers. A past survey describes the boat at its
                 inspection date.
               </p>
-              <a className="text-link" href="#contact">
-                Ask about service documentation ↗
+              <a className="text-link" href="#contact-survey">
+                Request marine survey &amp; service records ↗
               </a>
             </div>
             <div className="service-timeline">
@@ -588,9 +590,22 @@ export default function Home() {
               <strong>{priceFormatted}</strong>
               <span>{boat.shortLocation}</span>
               <small>
-                Private sale by owner · Approximately {boat.engineHours} engine
+                Private sale by owner · USCG Documented Vessel · Approximately {boat.engineHours} engine
                 hours
               </small>
+            </div>
+            <div className="survey-callout-card">
+              <div className="survey-badge">
+                <span className="survey-badge-dot" />
+                DOCUMENTATION AVAILABLE
+              </div>
+              <h3>Marine Survey &amp; Service Records</h3>
+              <p>
+                Historical marine survey documentation, recent 100-hour service invoices, and maintenance logs are available for review by serious prospective buyers.
+              </p>
+              <a href="#contact-survey" className="survey-callout-btn">
+                Request Survey &amp; Records ↓
+              </a>
             </div>
             <p className="contact-note">
               Showings by arrangement.
@@ -598,7 +613,9 @@ export default function Home() {
               Sea trials can be discussed with serious prospective buyers.
             </p>
           </div>
-          <ContactForm />
+          <div id="contact-survey" className="contact-form-wrapper">
+            <ContactForm />
+          </div>
         </section>
       </main>
       <footer className="site-footer">

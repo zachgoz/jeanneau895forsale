@@ -72,6 +72,43 @@ describe("contact request validation and delivery acceptance", () => {
     );
   });
 
+  it("flags survey request in subject and body when requestSurvey is true", async () => {
+    const { app, mailer } = setup();
+    const surveyInput = {
+      ...validInput,
+      requestId: "550e8400-e29b-41d4-a716-446655440001",
+      requestSurvey: true,
+    };
+    const response = await request(app).post("/api/contact").send(surveyInput);
+    expect(response.status).toBe(200);
+    expect(mailer).toHaveBeenCalledWith(
+      expect.objectContaining({
+        subject: "[895ForSale.com] [Survey Requested] New inquiry from Alex Buyer",
+        text: expect.stringContaining("Survey & Records Requested: Yes"),
+        html: expect.stringContaining("Survey &amp; Records Requested</strong></dt><dd>Yes</dd>"),
+      }),
+      { idempotencyKey: `boat-contact/${surveyInput.requestId}` },
+    );
+  });
+
+  it("flags survey request in subject and body when inquiryType is service_survey_documentation", async () => {
+    const { app, mailer } = setup();
+    const surveyInput = {
+      ...validInput,
+      requestId: "550e8400-e29b-41d4-a716-446655440002",
+      inquiryType: "service_survey_documentation",
+    };
+    const response = await request(app).post("/api/contact").send(surveyInput);
+    expect(response.status).toBe(200);
+    expect(mailer).toHaveBeenCalledWith(
+      expect.objectContaining({
+        subject: "[895ForSale.com] [Survey Requested] New inquiry from Alex Buyer",
+        text: expect.stringContaining("Survey & Records Requested: Yes"),
+      }),
+      { idempotencyKey: `boat-contact/${surveyInput.requestId}` },
+    );
+  });
+
   it("keeps the same idempotency key and email on retry", async () => {
     const { app, mailer } = setup();
     await request(app).post("/api/contact").send(validInput);

@@ -34,6 +34,7 @@ export const contactSchema = z
       "service_survey_documentation",
     ]),
     activelyLooking: z.boolean().optional().default(false),
+    requestSurvey: z.boolean().optional().default(false),
     website: z.string().max(200),
     startedAt: z.number().int().positive(),
     requestId: z.uuid(),
@@ -101,12 +102,16 @@ export function buildContactEmail(
   input: ContactInput,
   configuration: { toEmail: string; fromEmail: string },
 ): ContactEmail {
+  const isSurvey =
+    input.requestSurvey || input.inquiryType === "service_survey_documentation";
+
   const fields = [
     ["Name", input.name],
     ["Email", input.email],
     ["Phone", input.phone || "Not supplied"],
     ["Inquiry Type", inquiryLabels[input.inquiryType]],
     ["Preferred Contact Method", input.preferredContactMethod],
+    ["Survey & Records Requested", isSurvey ? "Yes" : "No"],
     ["Actively Looking", input.activelyLooking ? "Yes" : "Not indicated"],
     ["Source Page", input.sourcePage ?? "/"],
   ];
@@ -115,7 +120,9 @@ export function buildContactEmail(
     from: configuration.fromEmail,
     to: [configuration.toEmail],
     replyTo: input.email,
-    subject: `[895ForSale.com] New inquiry from ${input.name}`,
+    subject: isSurvey
+      ? `[895ForSale.com] [Survey Requested] New inquiry from ${input.name}`
+      : `[895ForSale.com] New inquiry from ${input.name}`,
     html: `<h1>New inquiry about EZ Livin</h1><dl>${fields
       .map(
         ([label = "", value = ""]) =>
