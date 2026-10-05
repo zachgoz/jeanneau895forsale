@@ -172,6 +172,34 @@ const selections = [
     "EZ Livin anchored by a beach with other boats and people at the shoreline",
     "Real days aboard EZ Livin",
   ],
+  [
+    "IMG_9030.JPG",
+    "forward-cabin-staged",
+    "Cabins & head",
+    "Forward private master cabin staged with made bed and decorative pillows aboard EZ Livin",
+    "Forward master cabin · staged with made bed and pillows",
+  ],
+  [
+    "IMG_9031.JPG",
+    "second-cabin-staged",
+    "Cabins & head",
+    "Second private cabin staged with bedding, pillows and reading lights aboard EZ Livin",
+    "Second cabin · staged with bedding and pillows",
+  ],
+  [
+    "IMG_9032.JPG",
+    "enclosed-head-staged",
+    "Cabins & head",
+    "Enclosed marine head staged with rolled towels, wood vanity and sink aboard EZ Livin",
+    "Enclosed head · staged with towels and vanity",
+  ],
+  [
+    "IMG_9033.JPG",
+    "salon-dinette-staged",
+    "Interior",
+    "Salon dinette staged with table setting, throw pillows and panoramic windows aboard EZ Livin",
+    "Salon dinette · staged with cushions and pillows",
+  ],
 ].map(([originalFilename, id, category, alt, caption]) => ({
   originalFilename,
   id,
@@ -200,16 +228,8 @@ const excludedReasons = {
     "Partial forward-cabin doorway angle; complete berth and doorway views selected.",
   "IMG_8981.jpg":
     "Near-duplicate forward berth; wider landscape IMG_8982.jpg selected.",
-  "IMG_9030.JPG":
-    "Lower-resolution furnished forward-cabin repeat (896px wide); detailed higher-resolution cabin images selected.",
-  "IMG_9031.JPG":
-    "Lower-resolution furnished second-cabin repeat (896px wide); higher-resolution cabin images selected.",
-  "IMG_9032.JPG":
-    "Lower-resolution head repeat (896px wide); higher-resolution head images selected.",
-  "IMG_9033.JPG":
-    "Lower-resolution furnished dinette repeat (1195px wide); higher-resolution salon images selected.",
   "My Movie 2.mov":
-    "Owner video preserved at source; excluded from the static still-photo gallery and initial page load.",
+    "Owner video preserved at source; published to YouTube and embedded directly on site.",
 };
 
 const digest = (buffer) => createHash("sha256").update(buffer).digest("hex");

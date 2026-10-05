@@ -3,7 +3,7 @@
 Source: `/Users/zgosling/Pictures/Jeanneau/Pics`. Inspected all still photographs in a contact sheet and individually checked the hero, cabins, helm, systems and owner photo. All 37 originals were hashed before and after processing and remain unchanged. No source files were moved, renamed or edited.
 
 - 36 JPEG/JPG still photos and 1 MOV video; no PNG, HEIC, HEIF or WebP originals in this source set.
-- 22 gallery photos; 14 stills excluded. No exact byte-identical duplicates. Near-duplicates were assessed visually.
+- 26 gallery photos; 10 stills excluded. No exact byte-identical duplicates. Near-duplicates were assessed visually.
 - Hero: `DA18D8EE20EE67A1783F0C55B0D60CDF.jpg` → `/images/boat/2018-jeanneau-nc-895-ez-livin-port-profile-1600.webp`. Broadside port profile, landscape, 2050 × 1536 source pixels.
 - Social preview: actual hero photograph → `/images/og/jeanneau-nc895-for-sale-og.jpg`, verified 1200 × 630 JPEG.
 - The technical/detail images include galley equipment, shower, installed head, helm controls, marine A/C controller and cabin layout. There is no dedicated generator compartment photograph in the supplied set. The stern aerial supplies the real engines/cockpit/swim-platform view.
@@ -11,7 +11,7 @@ Source: `/Users/zgosling/Pictures/Jeanneau/Pics`. Inspected all still photograph
 
 ## Public derivative handling
 
-The pipeline corrects EXIF orientation, removes EXIF/XMP/IPTC/ICC metadata, produces WebP at requested widths 480/960/1600/2400, and caps output to source resolution. Filename suffixes express the requested size; each generated `srcSet` uses the true decoded width. A 1536px portrait is never upscaled to 1600px and has no redundant 2400 derivative. A 2048px landscape's `-2400.webp` is capped at 2048px. The full beach photo has a 2400px derivative. Every output was decoded and checked for dimensions and unwanted metadata. Generated 82 WebP files totaling 17.30 MiB. Originals are not shipped publicly.
+The pipeline corrects EXIF orientation, removes EXIF/XMP/IPTC/ICC metadata, produces WebP at requested widths 480/960/1600/2400, and caps output to source resolution. Filename suffixes express the requested size; each generated `srcSet` uses the true decoded width. A 1536px portrait is never upscaled to 1600px and has no redundant 2400 derivative. A 2048px landscape's `-2400.webp` is capped at 2048px. The full beach photo has a 2400px derivative. Every output was decoded and checked for dimensions and unwanted metadata. Generated 91 WebP files totaling 17.89 MiB. Originals are not shipped publicly.
 
 Thumbnails should use `srcSet`, responsive `sizes` (about 480px for a gallery tile), explicit width/height and lazy loading. The hero alone should be preloaded. The lightbox can use the same `srcSet` with viewport-based sizes to obtain the largest useful derivative. Descriptive filenames, accurate alt text and captions are generated with the typed gallery data.
 
@@ -41,6 +41,10 @@ Thumbnails should use `srcSet`, responsive `sizes` (about 480px for a gallery ti
 | IMG_8970.jpg | enclosed-head | Cabins & head | Enclosed head |
 | IMG_8967.jpg | head-shower | Cabins & head | Shower in the enclosed head |
 | Ocracoke.jpg | beach-cruising | Exterior | Real days aboard EZ Livin |
+| IMG_9030.JPG | forward-cabin-staged | Cabins & head | Forward master cabin · staged with made bed and pillows |
+| IMG_9031.JPG | second-cabin-staged | Cabins & head | Second cabin · staged with bedding and pillows |
+| IMG_9032.JPG | enclosed-head-staged | Cabins & head | Enclosed head · staged with towels and vanity |
+| IMG_9033.JPG | salon-dinette-staged | Interior | Salon dinette · staged with cushions and pillows |
 
 ## Excluded photos/video
 
@@ -58,14 +62,10 @@ Exclusions preserve their originals. Furnished repeats were excluded for resolut
 | IMG_8969.jpg | Near-duplicate head angle; IMG_8970.jpg shows the fixtures more clearly. |
 | IMG_8976.jpg | Partial forward-cabin doorway angle; complete berth and doorway views selected. |
 | IMG_8981.jpg | Near-duplicate forward berth; wider landscape IMG_8982.jpg selected. |
-| IMG_9030.JPG | Lower-resolution furnished forward-cabin repeat (896px wide); detailed higher-resolution cabin images selected. |
-| IMG_9031.JPG | Lower-resolution furnished second-cabin repeat (896px wide); higher-resolution cabin images selected. |
-| IMG_9032.JPG | Lower-resolution head repeat (896px wide); higher-resolution head images selected. |
-| IMG_9033.JPG | Lower-resolution furnished dinette repeat (1195px wide); higher-resolution salon images selected. |
-| My Movie 2.mov | Owner video preserved at source; excluded from the static still-photo gallery and initial page load. |
+| My Movie 2.mov | Owner video preserved at source; published to YouTube and embedded directly on site. |
 
 ## Reprocessing and updates
 
-Run `npm run photos`, or `node scripts/process-photos.mjs /absolute/path/to/Pics`. The optional `PHOTO_SOURCE_DIR` environment variable can replace the default path. Edit `selections` to add/remove photos or improve alt text; edit `heroId` to change the hero and social-preview photograph. Regeneration writes `src/data/photos.ts` and both inventory files. It never deletes source files. Removed-photo public files may be removed manually from `public/images/boat` after confirming that they are generated files and no longer referenced. Update the restrained OG text alongside changes to listing facts.
+Run `npm run photos`, or `node scripts/process-photos.mjs /absolute/path/to/Pics`. The optional `PHOTO_SOURCE_DIR` environment variable can replace the default path. Edit `selections` to add/remove photos or improve alt text; edit `heroId` to change the hero and social-preview photograph. Regeneration writes `src/data/photos.ts` and both inventory files. It never deletes source files. Removed-photo public files may be removed manually from `public/images/boat` after confirming that they are generated files and no longer referenced. The OG overlay reads listing facts from src/data/boat.ts; regenerate after edits.
 
 The machine-readable inventory contains dimensions, byte sizes, hashes, duplicate flags and generated derivative metadata; it intentionally omits GPS coordinates and private EXIF values.

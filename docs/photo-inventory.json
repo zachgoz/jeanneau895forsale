@@ -2,15 +2,15 @@
   "sourceDirectory": "/Users/zgosling/Pictures/Jeanneau/Pics",
   "stillPhotoCount": 36,
   "videoCount": 1,
-  "selectedPhotoCount": 22,
-  "excludedStillCount": 14,
+  "selectedPhotoCount": 26,
+  "excludedStillCount": 10,
   "exactDuplicateCount": 0,
   "heroId": "port-profile",
   "heroOriginalFilename": "DA18D8EE20EE67A1783F0C55B0D60CDF.jpg",
   "ogSourceFilename": "DA18D8EE20EE67A1783F0C55B0D60CDF.jpg",
   "ogPublicPath": "/images/og/jeanneau-nc895-for-sale-og.jpg",
-  "derivativeCount": 82,
-  "derivativeBytes": 18142010,
+  "derivativeCount": 91,
+  "derivativeBytes": 18759340,
   "originalsVerifiedUnchanged": true,
   "publicMetadataVerifiedStripped": true,
   "entries": [
@@ -993,8 +993,8 @@
       "filename": "IMG_9030.JPG",
       "bytes": 202772,
       "sha256": "0e1f0d5cccb29cc99b58e2b1e36fe790364b0101ea1616292ee161592bf0a9cb",
-      "selected": false,
-      "reason": "Lower-resolution furnished forward-cabin repeat (896px wide); detailed higher-resolution cabin images selected.",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
       "exactDuplicateOf": null,
       "format": "jpeg",
       "width": 896,
@@ -1002,14 +1002,28 @@
       "rawWidth": 896,
       "rawHeight": 1195,
       "orientation": 1,
-      "containsExif": true
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-staged-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 27738
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-staged-960.webp",
+          "width": 896,
+          "height": 1195,
+          "bytes": 79194
+        }
+      ]
     },
     {
       "filename": "IMG_9031.JPG",
       "bytes": 241149,
       "sha256": "d2c06279964aa872b6d71d466d9137b4a3dfb57203875768725995e18193fff6",
-      "selected": false,
-      "reason": "Lower-resolution furnished second-cabin repeat (896px wide); higher-resolution cabin images selected.",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
       "exactDuplicateOf": null,
       "format": "jpeg",
       "width": 896,
@@ -1017,14 +1031,28 @@
       "rawWidth": 896,
       "rawHeight": 1195,
       "orientation": 1,
-      "containsExif": true
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-staged-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 33924
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-staged-960.webp",
+          "width": 896,
+          "height": 1195,
+          "bytes": 98632
+        }
+      ]
     },
     {
       "filename": "IMG_9032.JPG",
       "bytes": 188194,
       "sha256": "25727afece364661ce607fc0d5d769b560d4181e822be4189d9d0c08957d5964",
-      "selected": false,
-      "reason": "Lower-resolution head repeat (896px wide); higher-resolution head images selected.",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
       "exactDuplicateOf": null,
       "format": "jpeg",
       "width": 896,
@@ -1032,14 +1060,28 @@
       "rawWidth": 896,
       "rawHeight": 1195,
       "orientation": 1,
-      "containsExif": true
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-enclosed-head-staged-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 26322
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-enclosed-head-staged-960.webp",
+          "width": 896,
+          "height": 1195,
+          "bytes": 69938
+        }
+      ]
     },
     {
       "filename": "IMG_9033.JPG",
       "bytes": 298995,
       "sha256": "a16c65a951fbc05aefdaf370ded4fc47069705bd1baa8a457fd434dba7ae4524",
-      "selected": false,
-      "reason": "Lower-resolution furnished dinette repeat (1195px wide); higher-resolution salon images selected.",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
       "exactDuplicateOf": null,
       "format": "jpeg",
       "width": 1195,
@@ -1047,14 +1089,34 @@
       "rawWidth": 1195,
       "rawHeight": 896,
       "orientation": 1,
-      "containsExif": true
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-staged-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 30550
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-staged-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 89046
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-staged-1600.webp",
+          "width": 1195,
+          "height": 896,
+          "bytes": 161986
+        }
+      ]
     },
     {
       "filename": "My Movie 2.mov",
       "bytes": 9499869,
       "sha256": "0701679ad86d8e61f4a1a86a969765ab054433169626116beb6b5889f8186aec",
       "selected": false,
-      "reason": "Owner video preserved at source; excluded from the static still-photo gallery and initial page load.",
+      "reason": "Owner video preserved at source; published to YouTube and embedded directly on site.",
       "exactDuplicateOf": null,
       "format": "mov"
     },
