@@ -21,6 +21,7 @@ export type BoatListing = {
   fuelCapacityGallons: number;
   freshWaterGallons: number;
   lengthOverall: string;
+  beam: string;
   hullDraft: string;
   dryWeightLbs: number;
   generator: string;
@@ -33,6 +34,7 @@ export type BoatListing = {
   serviceHistory: { period: string; items: string[] }[];
   includedExtras: { name: string; status: string }[];
   excludedItems: string[];
+  alternateModel?: string;
   heroImage: typeof heroPhoto;
   gallery: typeof photos;
   editorialPhotos: typeof editorialPhotos;
@@ -42,6 +44,7 @@ export const boat: BoatListing = {
   year: 2018,
   make: "Jeanneau",
   model: "NC 895 Offshore",
+  alternateModel: "Merry Fisher 895",
   vesselName: "EZ Livin",
   price: 160000,
   location: "Carolina Beach, North Carolina",
@@ -59,6 +62,7 @@ export const boat: BoatListing = {
   fuelCapacityGallons: 158,
   freshWaterGallons: 42,
   lengthOverall: "29′ 4″",
+  beam: "9′ 9″",
   hullDraft: "2′",
   dryWeightLbs: 9252,
   generator: "Westerbeke 3.5 kW gasoline generator",
@@ -187,7 +191,12 @@ export const faqs = [
   {
     question: "Is the trailer included?",
     answer:
-      "No. EZ Livin can be trailered, but a trailer is not included in the sale. Confirm the tow vehicle, transport requirements and applicable permits with your transporter.",
+      `No. EZ Livin can be trailered, but a trailer is not included in the sale. With a ${boat.beam} beam and ${boat.lengthOverall} length overall, confirm your tow vehicle, transport requirements and any applicable state wide-load trailering permits with your transporter.`,
+  },
+  {
+    question: "What is the difference between the Jeanneau NC 895 and Merry Fisher 895?",
+    answer:
+      "They are the exact same hull and layout. Jeanneau markets this model as the Merry Fisher 895 in Europe and international markets, and as the NC 895 (New Concept) in North America.",
   },
   {
     question: "Where is the boat located?",

@@ -61,15 +61,19 @@ for (const value of [...sitemap.matchAll(/<(?:loc|image:loc)>(.*?)<\//g)].map(
   (match) => match[1],
 ))
   assert.ok(value.startsWith("https://895forsale.com/"));
-const jsonld = html.match(
-  /<script type="application\/ld\+json">(.*?)<\/script>/,
-)?.[1];
-assert.ok(jsonld);
-const product = JSON.parse(jsonld);
-assert.equal(product["@type"], "Product");
+const allJsonLd = [
+  ...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g),
+].map((match) => JSON.parse(match[1]));
+const product = allJsonLd.find((item) => item["@type"] === "Product");
+assert.ok(product);
 assert.equal(product.offers.price, 160000);
 assert.equal(product.offers.itemCondition, "https://schema.org/UsedCondition");
 assert.ok(!product.aggregateRating && !product.review);
+const faqPage = allJsonLd.find((item) => item["@type"] === "FAQPage");
+assert.ok(faqPage, "FAQPage schema missing");
+assert.ok(faqPage.mainEntity.length >= 10, "FAQPage entries missing");
+assert.match(html, /Merry Fisher/);
+assert.match(html, /9′ 9″/);
 assert.equal(firebase.hosting.public, "out");
 assert.equal(firebase.hosting.rewrites.length, 1);
 assert.equal(firebase.hosting.rewrites[0].source, "/api/contact");

@@ -60,6 +60,7 @@ export default function Home() {
     ["Asking price", priceFormatted],
     ["Location", boat.location],
     ["Length overall", boat.lengthOverall],
+    ["Beam", boat.beam],
     ["Hull draft", boat.hullDraft],
     ["Dry weight", `${boat.dryWeightLbs.toLocaleString()} lbs`],
     ["Engines", boat.engines.description],
@@ -79,6 +80,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${boat.year} ${boat.make} ${boat.model} “${boat.vesselName}”`,
+    alternateName: "Jeanneau Merry Fisher 895",
     description: `Private owner sale of ${boat.vesselName} in ${boat.location}. ${boat.engines.description}, approximately ${boat.engineHours} hours, ${boat.generator} and ${boat.climate}.`,
     brand: { "@type": "Brand", name: boat.make },
     model: boat.model,
@@ -94,12 +96,25 @@ export default function Home() {
     },
     additionalProperty: [
       ["Year", String(boat.year)],
+      ["Beam", boat.beam],
       ["Engine hours", `Approximately ${boat.engineHours}`],
       ["Engine configuration", boat.engines.description],
       ["Generator", boat.generator],
       ["Air conditioning", boat.climate],
       ["Location", boat.location],
     ].map(([name, value]) => ({ "@type": "PropertyValue", name, value })),
+  };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
   return (
     <>
@@ -205,11 +220,14 @@ export default function Home() {
                 particularly capable family cruiser.
               </p>
               <p>
-                EZ Livin has been lift-kept for the majority of her life, is
-                smoke-free and pet-free, and has been carefully maintained
-                according to the owner. At approximately {boat.engineHours}{" "}
-                engine hours, she is offered with recent service and a useful
-                collection of cruising equipment.
+                Known internationally as the Merry Fisher 895, the NC 895
+                Offshore pairs a {boat.beam} beam and dual-stepped hull with
+                practical coastal versatility. EZ Livin has been lift-kept for
+                the majority of her life, is smoke-free and pet-free, and has
+                been carefully maintained according to the owner. At
+                approximately {boat.engineHours} engine hours, she is offered
+                with recent service and a useful collection of cruising
+                equipment.
               </p>
               <a className="text-link" href="#service">
                 See recent service & updates <span aria-hidden="true">↗</span>
@@ -564,6 +582,12 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(product).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
       />
     </>
