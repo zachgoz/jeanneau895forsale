@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -21,15 +21,21 @@
 
 # debug
 npm-debug.log*
+*-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
 .env
-
-# vercel
-.vercel
+.env.*
+!.env.example
+service-account*.json
+functions/.secret.local
+functions/lib/
+.firebase/
+tmp/
+test-results/
+.firebaserc
 
 # typescript
 *.tsbuildinfo

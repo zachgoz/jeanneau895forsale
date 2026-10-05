@@ -1,0 +1,43 @@
+{
+  "name": "ez-livin-895-for-sale",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0 <25"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "photos": "node scripts/process-photos.mjs",
+    "functions:build": "npm --prefix functions run build",
+    "functions:test": "npm --prefix functions test",
+    "contact:check": "npm --prefix functions run contact:check --",
+    "emulators": "npm run build && npm run functions:build && firebase emulators:start --project demo-895forsale --only hosting,functions",
+    "deploy": "npm run build && npm run functions:build && firebase deploy --only hosting,functions",
+    "verify:export": "node scripts/verify-export.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "sharp": "^0.35.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^4.0.0"
+  },
+  "type": "module"
+}

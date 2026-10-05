@@ -1,0 +1,1103 @@
+{
+  "sourceDirectory": "/Users/zgosling/Pictures/Jeanneau/Pics",
+  "stillPhotoCount": 36,
+  "videoCount": 1,
+  "selectedPhotoCount": 22,
+  "excludedStillCount": 14,
+  "exactDuplicateCount": 0,
+  "heroId": "port-profile",
+  "heroOriginalFilename": "DA18D8EE20EE67A1783F0C55B0D60CDF.jpg",
+  "ogSourceFilename": "DA18D8EE20EE67A1783F0C55B0D60CDF.jpg",
+  "ogPublicPath": "/images/og/jeanneau-nc895-for-sale-og.jpg",
+  "derivativeCount": 82,
+  "derivativeBytes": 18142010,
+  "originalsVerifiedUnchanged": true,
+  "publicMetadataVerifiedStripped": true,
+  "entries": [
+    {
+      "filename": "0AF73F6752FC95BB51574A0FF9F09DD3.jpg",
+      "bytes": 869874,
+      "sha256": "19eb2093632635d669c463fa2860604b5853d7d047be725322cdbca6a46a5a19",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-starboard-profile-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 21344
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-starboard-profile-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 82196
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-starboard-profile-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 253570
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-starboard-profile-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 376076
+        }
+      ]
+    },
+    {
+      "filename": "53748D47C7656DC2A085A09F38B9BA0A.jpg",
+      "bytes": 713085,
+      "sha256": "210c49e0e05f1e0f8e9eb139fb199db06687a2df2a3cbfef579e4aa5681e7610",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-overhead-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 19182
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-overhead-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 69812
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-overhead-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 212842
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-overhead-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 307994
+        }
+      ]
+    },
+    {
+      "filename": "8036D2DC306EF5C5C9534C3FD49518B3.jpg",
+      "bytes": 871295,
+      "sha256": "f31d10669574956a375c7316aec9b7253997e366245603dbe80bda58eb8cefab",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2050,
+      "height": 1536,
+      "rawWidth": 2050,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-stern-twin-yamaha-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 26316
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-stern-twin-yamaha-960.webp",
+          "width": 960,
+          "height": 719,
+          "bytes": 94254
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-stern-twin-yamaha-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 274734
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-stern-twin-yamaha-2400.webp",
+          "width": 2050,
+          "height": 1536,
+          "bytes": 398088
+        }
+      ]
+    },
+    {
+      "filename": "BBE74D8D7AAD897B0603F49BBE35B9DC.jpg",
+      "bytes": 724365,
+      "sha256": "75995874f2422b0601abe4020d42dfa0f66deb5e27f33247cf0fd1cd540b6862",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-view-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18554
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-view-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 66430
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-view-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 207384
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-bow-view-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 299258
+        }
+      ]
+    },
+    {
+      "filename": "CFF756CB0EDF871B93D0D401DD71B550.jpg",
+      "bytes": 797371,
+      "sha256": "6ac18f25fb3202593ca68f163f6b1aadb860805d60fbffe9c1ae83e913b07f83",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-shoreline-aerial-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17460
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-shoreline-aerial-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 68696
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-shoreline-aerial-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 240488
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-shoreline-aerial-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 353686
+        }
+      ]
+    },
+    {
+      "filename": "DA18D8EE20EE67A1783F0C55B0D60CDF.jpg",
+      "bytes": 875885,
+      "sha256": "98a968fbe4014ed81ecf8d3c2ff9d3c54a2c87a10da339d62dc9439f444a7690",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2050,
+      "height": 1536,
+      "rawWidth": 2050,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-port-profile-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 23524
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-port-profile-960.webp",
+          "width": 960,
+          "height": 719,
+          "bytes": 89634
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-port-profile-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 282926
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-port-profile-2400.webp",
+          "width": 2050,
+          "height": 1536,
+          "bytes": 412710
+        }
+      ]
+    },
+    {
+      "filename": "Hours.jpeg",
+      "bytes": 5244279,
+      "sha256": "81eadfef82528e0d8550f4e9dbf3dc0e9575fe4a26e64d2b25e9dcc89d798910",
+      "selected": false,
+      "reason": "Historical engine-hour screen (roughly 300 hours); does not represent the current owner-stated approximately 400 hours.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 3024,
+      "height": 4032,
+      "rawWidth": 4032,
+      "rawHeight": 3024,
+      "orientation": 6,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8941.jpg",
+      "bytes": 1061035,
+      "sha256": "91b73d377f0ee6fb56068a0243e798e11d29a9c65c02e6089e9cb2cb9548bffd",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 28472
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 95182
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 314564
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-dinette-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 505486
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8942.jpg",
+      "bytes": 1010277,
+      "sha256": "9785c5bc8893ac56fc9a8ddc39748ddbea88c8380f667d2f92ee035d310d0d2c",
+      "selected": false,
+      "reason": "Near-duplicate dinette angle; IMG_8941.jpg selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8945.jpg",
+      "bytes": 1295802,
+      "sha256": "5940c27fd7b3a2b7197d0a150275e31a457a23bb1d9c851af7b4de813599bd11",
+      "selected": false,
+      "reason": "Redundant helm-seat close-up; IMG_8958.jpg shows the seat and useful side-door context.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8947.jpg",
+      "bytes": 1215303,
+      "sha256": "9cd2f342830cf6be26d94f8d68a469fff12429a41c1f8369e0031d12aced88e2",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-sink-cooktop-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 31150
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-sink-cooktop-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 118614
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-sink-cooktop-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 408786
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-sink-cooktop-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 656630
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8949.jpg",
+      "bytes": 970794,
+      "sha256": "6096d4ffdaa95ea2e9e8de9c341fc44e92c26f1a51826d0f96f7d84c6c4f1bf8",
+      "selected": false,
+      "reason": "Near-duplicate forward pilothouse angle; IMG_8950.jpg has clearer roof-hatch context.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8950.jpg",
+      "bytes": 1047251,
+      "sha256": "1ca97c425cd0c21984324e1d0b9bfb4e1ecb6d79cbdff2d4f3cf0117855cde19",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-pilothouse-windshield-roof-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 27738
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-pilothouse-windshield-roof-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 93294
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-pilothouse-windshield-roof-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 301320
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-pilothouse-windshield-roof-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 471686
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8953.jpg",
+      "bytes": 1198601,
+      "sha256": "40897f4be0f851ee9223b6de34e324d0eae238fdc0d2690d75c508f3fd3dc952",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-galley-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36102
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-galley-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 123008
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-galley-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 387314
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-galley-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 598042
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8955.jpg",
+      "bytes": 1068142,
+      "sha256": "3bb3ea2095007b596e2f49a822a23db4f24f4337568120382ae415a796aa79d7",
+      "selected": false,
+      "reason": "Near-duplicate salon/galley angle; wider landscape IMG_8953.jpg selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8958.jpg",
+      "bytes": 965203,
+      "sha256": "c6ede284bd7f518ab452d71cb30a6fbb613799f2343c679846b93d29513e5324",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-seat-side-door-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 41236
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-seat-side-door-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 139140
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-seat-side-door-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 402852
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8961.jpg",
+      "bytes": 1004019,
+      "sha256": "5db366bc7aebdd4733ce34418261e481776dd04e95f6b93342126bd70ea2e3c9",
+      "selected": false,
+      "reason": "Redundant helm-seat angle; IMG_8958.jpg and IMG_8962.jpg cover the seat, door and instruments.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8962.jpg",
+      "bytes": 1008304,
+      "sha256": "8409d0233ea8572fe81307f9c8da2a91d7b02c5e96a13069e2ea023dd63be4f7",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-lowrance-hds9-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 54434
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-lowrance-hds9-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 166320
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-helm-lowrance-hds9-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 445578
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8963.jpg",
+      "bytes": 1086527,
+      "sha256": "25bfdf2157ecd77d0963d551975932a943345e492a7927ffa4e7d8312c8a44e3",
+      "selected": false,
+      "reason": "Redundant forward companion-area angle covered by wider pilothouse views.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8964.jpg",
+      "bytes": 979634,
+      "sha256": "854f9e962fad025e0555ffad7a03a8468541c355c7833dc7f78408b6b17f8218",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-aft-view-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 25288
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-aft-view-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 77306
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-aft-view-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 260154
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-salon-aft-view-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 419506
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8967.jpg",
+      "bytes": 1018329,
+      "sha256": "b1eaf5b0cc0b76205dfe19fa4b2540769ccbc4220461bf770e7e3be75f422ac9",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-head-shower-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 18296
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-head-shower-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 98142
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-head-shower-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 489134
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8969.jpg",
+      "bytes": 965519,
+      "sha256": "051f421c085400cac03f32c1541721beddbc4efe7484e3e81c72abc129f96ad6",
+      "selected": false,
+      "reason": "Near-duplicate head angle; IMG_8970.jpg shows the fixtures more clearly.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8970.jpg",
+      "bytes": 1061509,
+      "sha256": "43f2d57529ac42eac33637046a934f078859f2a143a2d7e8f16ca52711d6ca0e",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-enclosed-head-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 23854
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-enclosed-head-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 113870
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-enclosed-head-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 535924
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8976.jpg",
+      "bytes": 1203411,
+      "sha256": "93278363604ecc9d02a14412a41cb34d17f7fcd154f93723e77391cbaa0d7b50",
+      "selected": false,
+      "reason": "Partial forward-cabin doorway angle; complete berth and doorway views selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8977.jpg",
+      "bytes": 1107069,
+      "sha256": "0f207954cb5546bf6ca822f47248e42892c4cf0bbe893afc507b46fc19ae0fad",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-aft-view-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 15520
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-aft-view-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 66392
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-aft-view-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 332582
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-aft-view-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 584962
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8981.jpg",
+      "bytes": 1171257,
+      "sha256": "6ddc9112e5b1f38d7c6f07159c95a1a2f6b78e179a85ab0b08d758ba13ba7c99",
+      "selected": false,
+      "reason": "Near-duplicate forward berth; wider landscape IMG_8982.jpg selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_8982.jpg",
+      "bytes": 1081706,
+      "sha256": "1718e04ede3ac920a4eb584099066ac5be4407aadf66f21ddf2a88541601fa3e",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 17470
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 72006
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 325534
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-forward-cabin-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 549688
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8985.jpg",
+      "bytes": 1063157,
+      "sha256": "7e18721b44d21eb3a8eefd29553aac8d7c99da7835017741695d1ee6d0619ca3",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-entry-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 25276
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-entry-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 114912
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-entry-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 512240
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8986.jpg",
+      "bytes": 1109776,
+      "sha256": "2c67d924399e9c8b3e2ba734d1e69e184a1d748c85961f2a97ab3ac4e93af89d",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 15058
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 87658
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 385878
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-second-cabin-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 643694
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8987.jpg",
+      "bytes": 967356,
+      "sha256": "c1528e46dcf8c34446af39af64797882d29f43384ee29965b3e904fd18cd1994",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1536,
+      "height": 2048,
+      "rawWidth": 1536,
+      "rawHeight": 2048,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-climate-control-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 45470
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-climate-control-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 160992
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-climate-control-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 453642
+        }
+      ]
+    },
+    {
+      "filename": "IMG_8988.jpg",
+      "bytes": 1405229,
+      "sha256": "ec8572d32df6b6d7e49d2be0bffb775b2cfdfdbea546f40485bc9e86e4427814",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 2048,
+      "height": 1536,
+      "rawWidth": 2048,
+      "rawHeight": 1536,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-microwave-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 31316
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-microwave-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 135636
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-microwave-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 506506
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-galley-microwave-2400.webp",
+          "width": 2048,
+          "height": 1536,
+          "bytes": 832948
+        }
+      ]
+    },
+    {
+      "filename": "IMG_9030.JPG",
+      "bytes": 202772,
+      "sha256": "0e1f0d5cccb29cc99b58e2b1e36fe790364b0101ea1616292ee161592bf0a9cb",
+      "selected": false,
+      "reason": "Lower-resolution furnished forward-cabin repeat (896px wide); detailed higher-resolution cabin images selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 896,
+      "height": 1195,
+      "rawWidth": 896,
+      "rawHeight": 1195,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_9031.JPG",
+      "bytes": 241149,
+      "sha256": "d2c06279964aa872b6d71d466d9137b4a3dfb57203875768725995e18193fff6",
+      "selected": false,
+      "reason": "Lower-resolution furnished second-cabin repeat (896px wide); higher-resolution cabin images selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 896,
+      "height": 1195,
+      "rawWidth": 896,
+      "rawHeight": 1195,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_9032.JPG",
+      "bytes": 188194,
+      "sha256": "25727afece364661ce607fc0d5d769b560d4181e822be4189d9d0c08957d5964",
+      "selected": false,
+      "reason": "Lower-resolution head repeat (896px wide); higher-resolution head images selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 896,
+      "height": 1195,
+      "rawWidth": 896,
+      "rawHeight": 1195,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "IMG_9033.JPG",
+      "bytes": 298995,
+      "sha256": "a16c65a951fbc05aefdaf370ded4fc47069705bd1baa8a457fd434dba7ae4524",
+      "selected": false,
+      "reason": "Lower-resolution furnished dinette repeat (1195px wide); higher-resolution salon images selected.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 1195,
+      "height": 896,
+      "rawWidth": 1195,
+      "rawHeight": 896,
+      "orientation": 1,
+      "containsExif": true
+    },
+    {
+      "filename": "My Movie 2.mov",
+      "bytes": 9499869,
+      "sha256": "0701679ad86d8e61f4a1a86a969765ab054433169626116beb6b5889f8186aec",
+      "selected": false,
+      "reason": "Owner video preserved at source; excluded from the static still-photo gallery and initial page load.",
+      "exactDuplicateOf": null,
+      "format": "mov"
+    },
+    {
+      "filename": "Ocracoke.jpg",
+      "bytes": 5948398,
+      "sha256": "f0035aa12482e344c1eacab847ace1269978695ecbf4448219af756e3352d56d",
+      "selected": true,
+      "reason": "Selected for useful distinct coverage.",
+      "exactDuplicateOf": null,
+      "format": "jpeg",
+      "width": 4000,
+      "height": 3000,
+      "rawWidth": 4000,
+      "rawHeight": 3000,
+      "orientation": 1,
+      "containsExif": true,
+      "derivatives": [
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-beach-cruising-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 9362
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-beach-cruising-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 35054
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-beach-cruising-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 141464
+        },
+        {
+          "src": "/images/boat/2018-jeanneau-nc-895-ez-livin-beach-cruising-2400.webp",
+          "width": 2400,
+          "height": 1800,
+          "bytes": 315170
+        }
+      ]
+    }
+  ]
+}
