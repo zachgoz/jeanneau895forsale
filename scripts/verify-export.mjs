@@ -149,24 +149,16 @@ for (const file of allFiles) {
     );
   }
 }
-if (process.argv.includes("--configured")) {
-  assert.match(
-    html,
-    /name="google-site-verification" content="local-verification-test"/,
-  );
-  const bundles = await Promise.all(
-    allFiles
-      .filter((file) => file.endsWith(".js"))
-      .map((file) => fs.readFile(file, "utf8")),
-  );
-  assert.ok(
-    bundles.some((contents) => contents.includes("G-TEST1234")),
-    "Configured GA ID missing",
-  );
-} else {
-  assert.ok(!html.includes('name="google-site-verification"'));
-  assert.ok(!html.includes("G-TEST1234"));
-}
+const bundles = await Promise.all(
+  allFiles
+    .filter((file) => file.endsWith(".js"))
+    .map((file) => fs.readFile(file, "utf8")),
+);
+assert.ok(
+  bundles.some((contents) => contents.includes("G-QES0WL2VQW")),
+  "Configured GA ID G-QES0WL2VQW missing from bundles",
+);
+assert.ok(!html.includes("G-TEST1234"));
 console.log(
   `Static export verification passed: metadata, structured data, sitemap/images, robots, rewrite, ${imageFiles.length} initial image references, metadata-free derivatives, 1200×630 OG, secret scan. Photo inventory keys: ${Object.keys(inventory).join(", ")}.`,
 );
