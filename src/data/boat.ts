@@ -35,6 +35,8 @@ export type BoatListing = {
   includedExtras: { name: string; status: string }[];
   excludedItems: string[];
   alternateModel?: string;
+  youtubeId?: string;
+  videoUrl?: string;
   heroImage: typeof heroPhoto;
   gallery: typeof photos;
   editorialPhotos: typeof editorialPhotos;
@@ -45,6 +47,8 @@ export const boat: BoatListing = {
   make: "Jeanneau",
   model: "NC 895 Offshore",
   alternateModel: "Merry Fisher 895",
+  youtubeId: "a7ZMJtGF8CU",
+  videoUrl: "https://youtu.be/a7ZMJtGF8CU",
   vesselName: "EZ Livin",
   price: 160000,
   location: "Carolina Beach, North Carolina",

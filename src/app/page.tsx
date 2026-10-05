@@ -116,6 +116,21 @@ export default function Home() {
       },
     })),
   };
+  const videoSchema = boat.youtubeId
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: `${boat.year} ${boat.make} ${boat.model} “${boat.vesselName}” Underway Video`,
+        description: `Video of privately offered ${boat.year} ${boat.make} ${boat.model} with ${boat.engines.description} in ${boat.location}.`,
+        thumbnailUrl: [
+          `https://img.youtube.com/vi/${boat.youtubeId}/hqdefault.jpg`,
+          `https://img.youtube.com/vi/${boat.youtubeId}/maxresdefault.jpg`,
+        ],
+        uploadDate: "2026-10-04T00:00:00Z",
+        contentUrl: boat.videoUrl,
+        embedUrl: `https://www.youtube-nocookie.com/embed/${boat.youtubeId}`,
+      }
+    : null;
   return (
     <>
       <Header />
@@ -154,10 +169,16 @@ export default function Home() {
               alt={boat.heroImage.alt}
               fetchPriority="high"
             />
-            <a href="#gallery" className="photo-badge">
-              <span aria-hidden="true">▦</span> {boat.gallery.length} real boat
-              photos ↗
-            </a>
+            <div className="photo-badges">
+              <a href="#gallery" className="photo-badge">
+                <span aria-hidden="true">▦</span> {boat.gallery.length} photos ↗
+              </a>
+              {boat.youtubeId && (
+                <a href="#video" className="photo-badge video-badge">
+                  <span aria-hidden="true">▶</span> Watch video ↗
+                </a>
+              )}
+            </div>
             <div className="hero-image-caption">
               <span>EZ LIVIN</span>
               <span>2018 NC 895 OFFSHORE</span>
@@ -280,6 +301,33 @@ export default function Home() {
             you’ll spend time in.
           </SectionIntro>
           <Gallery />
+          {boat.youtubeId && (
+            <div id="video" className="video-feature-wrap">
+              <div className="video-feature-header">
+                <div>
+                  <p className="eyebrow">VIDEO WALKAROUND</p>
+                  <h3>Watch EZ Livin on the water</h3>
+                </div>
+                <a
+                  href={boat.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-link"
+                >
+                  Open on YouTube <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <div className="video-frame-container">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${boat.youtubeId}?rel=0`}
+                  title={`${boat.year} ${boat.make} ${boat.model} “${boat.vesselName}” underway video`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          )}
         </section>
         <section id="owner-story" className="owner-section">
           <div className="owner-image">
@@ -590,6 +638,14 @@ export default function Home() {
           __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
         }}
       />
+      {videoSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(videoSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
     </>
   );
 }
