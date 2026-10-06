@@ -68,6 +68,14 @@ const product = allJsonLd.find((item) => item["@type"] === "Product");
 assert.ok(product);
 assert.equal(product.offers.price, 160000);
 assert.equal(product.offers.itemCondition, "https://schema.org/UsedCondition");
+assert.equal(
+  product.offers.hasMerchantReturnPolicy?.returnPolicyCategory,
+  "https://schema.org/MerchantReturnNotPermitted",
+);
+assert.equal(
+  product.offers.shippingDetails?.["@type"],
+  "OfferShippingDetails",
+);
 assert.ok(!product.aggregateRating && !product.review);
 const faqPage = allJsonLd.find((item) => item["@type"] === "FAQPage");
 assert.ok(faqPage, "FAQPage schema missing");
