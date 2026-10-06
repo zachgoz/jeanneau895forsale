@@ -166,6 +166,21 @@ assert.ok(
   bundles.some((contents) => contents.includes("G-QES0WL2VQW")),
   "Configured GA ID G-QES0WL2VQW missing from bundles",
 );
+assert.match(
+  html,
+  /<script[^>]*src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-QES0WL2VQW"[^>]*><\/script>/,
+  "Official Google tag script missing from exported index.html",
+);
+assert.match(
+  html,
+  /dataLayer\.push\(arguments\)/,
+  "gtag arguments queue function missing from exported index.html",
+);
+assert.match(
+  html,
+  /gtag\('config',\s*'G-QES0WL2VQW'/,
+  "gtag config call missing from exported index.html",
+);
 assert.ok(!html.includes("G-TEST1234"));
 console.log(
   `Static export verification passed: metadata, structured data, sitemap/images, robots, rewrite, ${imageFiles.length} initial image references, metadata-free derivatives, 1200×630 OG, secret scan. Photo inventory keys: ${Object.keys(inventory).join(", ")}.`,

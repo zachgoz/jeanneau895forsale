@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Analytics from "@/components/Analytics";
 import { boat, siteUrl, priceFormatted } from "@/data/boat";
+import { getMeasurementId } from "@/lib/analytics";
 import "./globals.css";
 const title = `${boat.year} ${boat.make} NC 895 for Sale | ${boat.vesselName} | ${boat.shortLocation}`;
 const description = `Privately offered ${boat.year} ${boat.make} ${boat.model} in ${boat.shortLocation}. Twin Yamaha 200 HP outboards, approx. ${boat.engineHours} hours, generator, 16,000 BTU A/C and bow thruster. ${priceFormatted}.`;
@@ -45,6 +46,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   themeColor: "#102a36",
 };
+const gaId = getMeasurementId();
+
 export default function RootLayout({
   children,
 }: {
@@ -52,6 +55,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {gaId && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            />
+            <script
+              id="google-analytics"
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+gtag('js', new Date());
+gtag('config', '${gaId}', {
+  page_location: 'https://895forsale.com/',
+  send_page_view: true,
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false
+});`,
+              }}
+            />
+          </>
+        )}
+      </head>
       <body>
         <a className="skip-link" href="#main-content">
           Skip to content
